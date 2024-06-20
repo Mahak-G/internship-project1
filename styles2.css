@@ -306,3 +306,71 @@ main {
 
 
 
+@media (max-width: 1200px) {
+   
+    .nav-content {
+        flex-wrap: wrap;
+    }
+    .hero-content {
+        margin-left: 50px;
+    }
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: static;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 60%; 
+        box-sizing: border-box; 
+    }
+    .social-icons {
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .appointment-button {
+        margin-top: 15px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background: url('doctor-image.jpg') no-repeat center center;
+        background-size:cover;
+        min-height: 320px;
+    }
+    .hero-content {
+        max-width: 90%;
+        margin-left: 0;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        padding: 0 10px; 
+    }
+}
+
