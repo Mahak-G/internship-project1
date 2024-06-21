@@ -65,6 +65,7 @@ nav .logo {
     font-size: 30px;
     font-weight: 600;
     color: #0056b3;
+    cursor: pointer;
 }
 
 nav ul {
@@ -307,10 +308,10 @@ main {
 
 
 @media (max-width: 1200px) {
-   
     .nav-content {
         flex-wrap: wrap;
     }
+    
     .hero-content {
         margin-left: 50px;
     }
@@ -321,9 +322,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    nav {
-        position: static;
-    }
+    
     .contact-info {
         flex-direction: column;
         align-items: flex-start;
@@ -335,27 +334,57 @@ main {
         margin-left: 15px;
         margin-top: 5px;
     }
+    nav {
+        position: static;
+    }
+    
     .nav-content {
         flex-direction: column;
         align-items: center;
     }
-    nav ul {
+    .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
-    nav ul li {
-        margin: 10px 0;
+
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        color: #333;
+    }
+
+    .nav-links li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .logo:hover + .nav-links,
+    .nav-links:hover {
+        display: flex;
     }
     .appointment-button {
-        margin-top: 15px;
+        margin-top: 20px;
     }
+    
     .hero {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
         background: url('doctor-image.jpg') no-repeat center center;
         background-size:cover;
-        min-height: 320px;
+        min-height: 350px;
+
     }
     .hero-content {
         max-width: 90%;
@@ -374,3 +403,30 @@ main {
     }
 }
 
+@media (max-width: 480px) {
+    .contact-info {
+        flex-direction:column;
+        align-items: left;
+        justify-content: left;
+    }
+    .contact-info a, .contact-info span {
+        margin-top: 10px;
+        align-items: left;
+        text-align: left;
+        font-size: small;
+    }
+    .social-icons {
+        gap: 7px;
+    }
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
