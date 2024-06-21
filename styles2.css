@@ -405,14 +405,15 @@ main {
 
 @media (max-width: 480px) {
     .contact-info {
-        flex-direction:column;
+        flex-direction: column;
         align-items: left;
-        justify-content: left;
+        justify-content: center;
+        margin-left: 110px;
     }
     .contact-info a, .contact-info span {
         margin-top: 10px;
         align-items: left;
-        text-align: left;
+        text-align: center;
         font-size: small;
     }
     .social-icons {
@@ -428,5 +429,7 @@ main {
     }
     nav ul li {
         margin: 10px 0;
+    }
+}
     }
 }
