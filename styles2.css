@@ -20,8 +20,8 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
-    z-index: 1001;
+    
+    
     text-align: center;
 }
 
@@ -45,12 +45,12 @@ header {
 }
 
 nav {
-    position: fixed;
-    top: 20;
+    
+    top: 10;
     left: 0;
     right: 0;
     background-color: #fff;
-    z-index: 1000;
+    margin-bottom: 0;
 }
 
 .nav-content {
@@ -126,7 +126,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 .hero {
@@ -446,6 +446,3 @@ main {
     }
     
 }
-
-
-
