@@ -36,7 +36,7 @@ header {
     
     display: flex;
     align-items: center;
-    margin-left: 700px;
+    margin-left: 650px;
 }
 
 .social-icons a {
@@ -180,14 +180,14 @@ main {
 }
 
 .reason {
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: #fff;
     text-align: center;
     flex: 1;
     min-width: 200px;
     padding: 30px;
     border-radius: 8px;
-    height: 300px;
+    height: 400px;
     opacity: 0.9;
 }
 
